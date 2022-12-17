@@ -26,33 +26,33 @@ public class F1 extends Car {
 newSpeed = c1.getSpeed()+rate;
         if(newSpeed <= 0) {
            c1.setGear(1);
-           // System.out.println("gear "+c1.getGear());
+           System.out.println("gear "+c1.getGear());
         }
         //for all other cases, change the gear accordingly
 
         if(newSpeed > 0) {
             if(newSpeed>0 && newSpeed <51 ){
                 c1.setGear(1);
-                //System.out.println("gear "+c1.getGear());
+                System.out.println("gear "+c1.getGear());
             }
             else if(newSpeed>50 && newSpeed <101 ){
                 c1.setGear(2);
-                //System.out.println("gear "+c1.getGear());
+                System.out.println("gear "+c1.getGear());
             }
             else if(newSpeed>100 && newSpeed <151 ){
                 c1.setGear(3);
-               // System.out.println("gear "+c1.getGear());
+               System.out.println("gear "+c1.getGear());
             }
             else if(newSpeed>150 && newSpeed <201 ){
                 c1.setGear(4);
-                //System.out.println("gear "+c1.getGear());
+                System.out.println("gear "+c1.getGear());
             }
             else if(newSpeed>200 && newSpeed <250 ){
                 c1.setGear(5);
-                //System.out.println("gear "+c1.getGear());
+                System.out.println("gear "+c1.getGear());
             }
             else { c1.setGear(6);
-               // System.out.println("gear "+c1.getGear());
+               System.out.println("gear "+c1.getGear());
             }
 
         }
