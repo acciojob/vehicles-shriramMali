@@ -39,6 +39,14 @@ public class Car extends Vehicle {
         this.type = type;
     }
 
+    public int getGears() {
+        return gears;
+    }
+
+    public void setGears(int gears) {
+        this.gears = gears;
+    }
+
     public int getDoors() {
         return doors;
     }
