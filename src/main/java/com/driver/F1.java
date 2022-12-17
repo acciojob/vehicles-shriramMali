@@ -26,7 +26,7 @@ public class F1 extends Car {
 newSpeed = c1.getSpeed()+rate;
         if(newSpeed <= 0) {
            c1.setGear(1);
-            System.out.println("gear "+c1.getGear());
+           // System.out.println("gear "+c1.getGear());
         }
         //for all other cases, change the gear accordingly
 
