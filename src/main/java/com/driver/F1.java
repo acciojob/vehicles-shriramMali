@@ -4,7 +4,7 @@ public class F1 extends Car {
      String name;
      boolean isManual;
     public F1(String name, boolean isManual) {
-        super(name,4,2,1,isManual,"",8);
+        super(name,4,2,1,isManual,"Sports",8);
         this.name=name;
         this.isManual=isManual;
     }
@@ -21,23 +21,23 @@ public class F1 extends Car {
          * speed 201-250: gear 5
          * speed more than 250: gear 6
          */
-        if(newSpeed <= 0) {
+        if(newSpeed == 0) {
          stop();
          changeGear(1);
         }
         //for all other cases, change the gear accordingly
 
         if(newSpeed > 0) {
-            if( newSpeed <51 ){
+            if( newSpeed <=50 ){
                changeGear(1);
             }
-            else if( newSpeed <101 ){
+            else if( newSpeed <=100 ){
                 changeGear(2);
             }
-            else if( newSpeed <151 ){
+            else if( newSpeed <=150 ){
                changeGear(3);
             }
-            else if(newSpeed <201 ){
+            else if(newSpeed <=200 ){
                 changeGear(4);
             }
             else if( newSpeed <=250 ){
