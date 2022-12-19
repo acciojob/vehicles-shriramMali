@@ -1,12 +1,9 @@
 package com.driver;
 
 public class F1 extends Car {
-     String name;
-     boolean isManual;
+
     public F1(String name, boolean isManual) {
         super(name,4,2,1,isManual,"Sports",8);
-        this.name=name;
-        this.isManual=isManual;
     }
 
 
@@ -47,6 +44,9 @@ public class F1 extends Car {
 
             }
 
+            if(newSpeed > 0) {
+                changeSpeed(newSpeed, getCurrentDirection());
+            }
         }
     }
 }
